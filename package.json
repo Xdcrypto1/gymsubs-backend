@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +20,10 @@
     "jsonwebtoken": "^9.0.3",
     "node-cron": "^4.2.1",
     "nodemailer": "^8.0.9",
-<<<<<<< HEAD
     "pg": "^8.21.0",
     "resend": "^6.18.1"
-=======
-    "pg": "^8.21.0"
->>>>>>> c72b316ed9b6088579d802fee62200c02891e4ef
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
