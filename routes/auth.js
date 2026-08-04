@@ -136,8 +136,8 @@ router.post("/magic-link", async (req, res) => {
 });
 
 // Verify magic link token
-router.get("/verify", async (req, res) => {
-  const { token } = req.query;
+router.post("/verify", async (req, res) => {
+  const { token } = req.body;
 
   if (!token) {
     return res.status(400).json({ error: "Token is required" });
